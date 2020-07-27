@@ -1,0 +1,57 @@
+<%- include("header") -%>
+
+<section class="colored-section" id="title">
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="">ARK</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">How It Works</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/give">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/request">Request</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</section>
+
+<!-- Form -->
+
+<section class="white-section">
+  <div class="container-fluid center">
+    <% newRequests.forEach(function(request){ %>
+    <div class="card">
+      <form action="/delete" method="post">
+        <h5 class="card-header"><%=  request.fName  %> <%=  request.lName  %></h5>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <h6 class="card-title"><%=  request.phone  %></h6>
+            </div>
+            <div class="col-lg-6">
+              <h6 class="card-title"><%=  request.email  %></h6>
+            </div>
+          </div>
+          <p class="card-text"><%=  request.need  %></p>
+          <h6><%=  request.payment  %></h6>
+          <button class="btn btn-success" type="submit" name="submit" value="<%=request._id%>">Need Fulfilled!</button>
+        </div>
+      </form>
+    </div>
+
+    <% }); %>
+  </div>
+</section>
+
+<%- include("footer") -%>

@@ -1,0 +1,66 @@
+<%- include("header") -%>
+
+<section class="colored-section" id="title">
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="">ARK</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/give">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/request">Request</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</section>
+
+<!-- Title -->
+
+<div class="jumbotron jumbotron-fluid jumbo-background">
+  <div class="container-fluid">
+    <h1 class="display-2">Welcome to ARK</h1>
+    <p class="h2 subtitle">A platform for direct charitable giving.</p>
+    <a href="/give"><button type="button" class="btn btn-lg btn-jumbotron btn-dark" name="Donate"><i class="fas fa-gift"></i> Donate</button></a>
+    <a href="/request"><button type="button" class="btn btn-lg btn-jumbotron btn-dark" name="Request"><i class="far fa-hand-paper"></i> Request</button></a>
+  </div>
+</div>
+
+
+<!-- Features -->
+
+<section class="white-section center">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <i class="fas fa-check-circle fa-4x feature-icon"></i>
+        <h3 class="feature-title">Easy to Use</h3>
+        <p>Anyone can use it from any device anywhere.</p>
+      </div>
+      <div class="col-lg-4">
+        <i class="fas fa-bullseye fa-4x feature-icon"></i>
+        <h3 class="feature-title">Verified Requests</h3>
+        <p>Information is accurate and verified.</p>
+      </div>
+      <div class="col-lg-4">
+        <i class="fas fa-heart fa-4x feature-icon"></i>
+        <h3 class="feature-title">100% Free</h3>
+        <p>100% of your donation is received by the recipient.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<%- include("footer") -%>

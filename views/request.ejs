@@ -1,0 +1,84 @@
+<%- include("header") -%>
+
+<section class="colored-section" id="title">
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="">ARK</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/give">Donate</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/request">Request</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</section>
+
+<!-- Form -->
+
+<section class="white-section request-form">
+
+  <div class="container-fluid">
+    <h1>Make a needs request:</h1>
+    <p>We all need a little help sometimes. This time, we are here for you.</p>
+    <form class="" action="/give" method="post">
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label class="formLabel" for="firstName">First Name</label>
+          <input type="text" class="form-control" name="fName" id="firstName" placeholder="First Name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label class="formLabel" for="lastName">Last Name</label>
+          <input type="text" class="form-control" name="lName" id="lastName" placeholder="Last Name" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label class="formLabel" for="inputEmail">Email</label>
+          <input type="email" class="form-control" name="email" id="inputEmail" placeholder="person@example.com" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label class="formLabel" for="inputPhone">Phone Number</label>
+          <input type="phone" class="form-control" name="phone" id="inputPhone" placeholder="e.g. 613-123-4567">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="formLabel" for="need">Need Description</label>
+        <textarea class="needDescription form-control" name="need" rows="5" id="need" placeholder="Describe your need." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="formLabel" for="payment">Best form of Payment</label>
+        <input type="text" class="form-control" name="payment" placeholder="Venmo: @handle, Cashapp: @handle, or other" id="payment" required>
+      </div>
+
+      <div class="form-group">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="agreeToT&C" required>
+          <label class="form-check-label" for="agreeToT&C"> By checking this box, I agree to the Terms and Conditions</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-lg btn-primary btn-block" name="submit">Submit</button>
+
+    </form>
+  </div>
+
+</section>
+
+<%- include("footer") -%>

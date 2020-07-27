@@ -126,3 +126,7 @@ input[type="text"], input[type="phone"], input[type="email"] {
 .right {
   text-align: right;
 }
+
+.min {
+  min-height: 450px;
+}

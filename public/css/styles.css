@@ -78,6 +78,12 @@ p {
 }
 
 /* Footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .icon {
   padding: 0 30px;
 }
@@ -128,5 +134,5 @@ input[type="text"], input[type="phone"], input[type="email"] {
 }
 
 .min {
-  min-height: 450px;
+  min-height: 65vh;
 }

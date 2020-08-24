@@ -11,7 +11,31 @@ p {
   color: #8f8f8f;
 }
 
-/* Jumbotron */
+.container-fluid {
+  padding: 5% 0;
+}
+
+.error {
+  color: #aa1111;
+}
+
+/* Cards
+================================== */
+.card {
+  margin: 30px 0;
+}
+
+.center {
+  padding: 0 5%;
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Jumbotron
+================================== */
 .btn-jumbotron {
   margin: 10px 10px;
   padding-left: 50px;
@@ -19,16 +43,17 @@ p {
 }
 
 .jumbo-background {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 100%), url("https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?cs=srgb&dl=people-silhouette-during-sunset-853168.jpg&fm=jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?cs=srgb&dl=people-silhouette-during-sunset-853168.jpg&fm=jpg");
   background-size: cover;
   text-align: center;
 }
 
-.subtitle {
-  color: #000;
+.title, .subtitle {
+  color: #fff;
 }
 
-/* Headings */
+/* Headings
+================================== */
 .big-heading {
   font-family: 'Montserrat';
   size: 3.5rem;
@@ -41,22 +66,8 @@ p {
   line-height: 1.5;
 }
 
-/* Containers */
-.container-fluid {
-  padding: 5% 0;
-}
-
-/* Sections */
-.colored-section {
-  background-color: #0071AD;
-  color: #FFF;
-}
-
-.white-section {
-  background-color: #fff;
-}
-
-/* Navigation Bar */
+/* Navigation
+================================== */
 .navbar {
   padding: 0 5%;
 }
@@ -77,13 +88,8 @@ p {
   font-weight: bold;
 }
 
-/* Footer */
-#footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
+/* Footer
+================================== */
 .icon {
   padding: 0 30px;
 }
@@ -92,7 +98,15 @@ p {
   color: #fff;
 }
 
-/* Form */
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Forms
+================================== */
 .request-form {
   padding: 0 5%;
 }
@@ -103,9 +117,10 @@ p {
 
 form {
   text-align: left;
+  margin-bottom: 1em;
 }
 
-input[type="text"], input[type="phone"], input[type="email"] {
+.request-form:input[type="text"], .request-form:input[type="phone"], .request-form:input[type="email"] {
   height: 60px;
   top: 10px;
   background: transparent;
@@ -120,19 +135,13 @@ input[type="text"], input[type="phone"], input[type="email"] {
   font-weight: 200;
 }
 
-.card {
-  margin: 30px 0;
+/* Sections
+================================== */
+.colored-section {
+  background-color: #0071AD;
+  color: #FFF;
 }
 
-.center {
-  padding: 0 5%;
-  text-align: center;
-}
-
-.right {
-  text-align: right;
-}
-
-.min {
-  min-height: 65vh;
+.white-section {
+  background-color: #fff;
 }

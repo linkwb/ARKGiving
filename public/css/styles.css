@@ -1,9 +1,9 @@
 body {
   font-family: 'Montserrat';
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat';
   font-weight: 900;
 }
 
@@ -17,6 +17,21 @@ p {
 
 .error {
   color: #aa1111;
+}
+
+.title, .subtitle {
+  color: #fff;
+}
+
+@media (min-width: 64rem) {
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .title {
+    font-size: 3.7rem;
+  }
 }
 
 /* Cards
@@ -48,10 +63,6 @@ p {
   text-align: center;
 }
 
-.title, .subtitle {
-  color: #fff;
-}
-
 /* Headings
 ================================== */
 .big-heading {
@@ -64,6 +75,14 @@ p {
 .section-heading {
   font-size: 3rem;
   line-height: 1.5;
+}
+
+@media (min-width: 64rem) {
+  .big-heading {
+    font-size: 2.4rem;
+    line-height: 1;
+    text-align: left;
+  }
 }
 
 /* Navigation
